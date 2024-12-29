@@ -243,7 +243,7 @@ httpServer.listen(PORT, () => {
 });
 
 const asyncReplyMessage = () => {
-  let timeout = setTimeout(() => {
+  const timeout = setTimeout(() => {
     clearTimeout(timeout);
     if (messages[messages.length - 1]?.sender === MessageSender.Admin) {
       const index = messages.length + 1;
