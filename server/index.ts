@@ -204,6 +204,7 @@ const wsServer = new WebSocketServer({
   server: httpServer,
   path: "/graphql",
 });
+// eslint-disable-next-line react-hooks/rules-of-hooks
 const serverCleanup = useServer({ schema }, wsServer);
 
 // Set up ApolloServer.
